@@ -1,0 +1,28 @@
+<items>
+    <item>
+        <dataType>Number</dataType>
+        <name>Harry Potter 1</name>
+        <data>5</data>
+        <group>Movie</group>
+    </item>
+    <item>
+        <dataType>Number</dataType>
+        <name>Harry Potter 2</name>
+        <data>6</data>
+        <group>Movies</group>
+        <items>
+            <item>
+                <dataType>Number</dataType>
+                <name>Harry Potter 3</name>
+                <data>7</data>
+                <group>Books</group>
+            </item>
+            <item>
+                <dataType>Number</dataType>
+                <name>Harry Potter 4</name>
+                <data>8</data>
+                <group>Books</group>
+            </item>
+        </items>
+    </item>
+</items>

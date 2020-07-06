@@ -7,7 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException, JAXBException {
-        File file = new File("items.xml");
+
+        File file = new File(Main.class.getResource("items.xml").getFile());
 
         JAXBContext context = JAXBContext.newInstance(Items.class);
         Unmarshaller un = context.createUnmarshaller();

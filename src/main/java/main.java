@@ -1,10 +1,9 @@
-import java.io.*;
-import java.util.List;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
 
 public class main {
     public static void main(String[] args) throws IOException, JAXBException {
@@ -14,7 +13,7 @@ public class main {
         Unmarshaller un = context.createUnmarshaller();
         items itemData = (items) un.unmarshal(file);
 
-        List items = itemData.getitem();
+        List<item> items = itemData.getItem();
 
         for(item e: items){
             System.out.println("DataType : "+e.getDataType());

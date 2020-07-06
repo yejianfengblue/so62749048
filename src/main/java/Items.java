@@ -14,4 +14,11 @@ public class Items {
     public void setItem(List<Item> itemList){
         this.item = itemList;
     }
+
+    @Override
+    public String toString() {
+        return "Items{" +
+                "item=" + item +
+                '}';
+    }
 }

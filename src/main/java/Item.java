@@ -46,4 +46,15 @@ public class Item {
     public void setItems(Items items) {
         this.items = items;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "dataType='" + dataType + '\'' +
+                ", name='" + name + '\'' +
+                ", data=" + data +
+                ", group='" + group + '\'' +
+                ", items=" + items +
+                '}';
+    }
 }

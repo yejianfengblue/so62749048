@@ -5,17 +5,17 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class main {
+public class Main {
     public static void main(String[] args) throws IOException, JAXBException {
         File file = new File("items.xml");
 
-        JAXBContext context = JAXBContext.newInstance(items.class);
+        JAXBContext context = JAXBContext.newInstance(Items.class);
         Unmarshaller un = context.createUnmarshaller();
-        items itemData = (items) un.unmarshal(file);
+        Items itemData = (Items) un.unmarshal(file);
 
-        List<item> items = itemData.getItem();
+        List<Item> items = itemData.getItem();
 
-        for(item e: items){
+        for(Item e: items){
             System.out.println("DataType : "+e.getDataType());
             System.out.println("Name : "+e.getName());
             System.out.println("Data : "+e.getData());

@@ -1,6 +1,6 @@
 import javax.xml.bind.annotation.XmlElement;
 
-public class item {
+public class Item {
     private String dataType;
     private String name;
     private int data;

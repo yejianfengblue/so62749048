@@ -3,15 +3,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement(name = "items")
-public class items {
-    private List<item> item;
+public class Items {
+    private List<Item> item;
 
     @XmlElement(name = "item")
-    public List<item> getItem(){
+    public List<Item> getItem(){
         return item;
     }
 
-    public void setItem(List<item> itemList){
+    public void setItem(List<Item> itemList){
         this.item = itemList;
     }
 }

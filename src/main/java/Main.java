@@ -21,6 +21,7 @@ public class Main {
             System.out.println("Name : "+e.getName());
             System.out.println("Data : "+e.getData());
             System.out.println("Group : "+e.getGroup());
+            System.out.println("Nested items : " + e.getItems());
             System.out.println("--------------------------");
         }
     }

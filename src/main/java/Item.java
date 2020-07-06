@@ -5,6 +5,7 @@ public class Item {
     private String name;
     private int data;
     private String group;
+    private Items items;
 
     @XmlElement
     public String getDataType(){
@@ -36,5 +37,13 @@ public class Item {
     }
     public void setGroup(String group){
         this.group = group;
+    }
+
+    public Items getItems() {
+        return items;
+    }
+
+    public void setItems(Items items) {
+        this.items = items;
     }
 }
